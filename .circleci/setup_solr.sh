@@ -3,7 +3,7 @@ set -e
 cd ..
 git clone --single-branch --branch master git@github.com:tulibraries/ansible-playbook-solrcloud.git
 mkdir -p ansible-playbook-solrcloud/data/tmp/collections
-cp -r ~/project ansible-playbook-solrcloud/data/tmp/collections/funcake-oai
+cp -r ~/project ansible-playbook-solrcloud/data/tmp/collections/funcake-oai-solr
 cd ansible-playbook-solrcloud
 make build
 STATUS=$(docker exec solr1 curl -s -o /dev/null -w "%{http_code}" http://solr1:8983/solr)
