@@ -147,6 +147,22 @@
      </lst>
   </requestHandler>
 
+  <updateHandler class="solr.DirectUpdateHandler2">
+    <autoCommit>
+       <maxDocs>1000000</maxDocs>
+       <maxTime>900000</maxTime>
+       <openSearcher>false</openSearcher>
+    </autoCommit>
+    <autoSoftCommit>
+      <maxTime>9000000</maxTime>
+    </autoSoftCommit>
+    <commitWithin>
+      <softCommit>false</softCommit>
+    </commitWithin>
+    <updateLog>
+      <str name="dir">${solr.ulog.dir:}</str>
+    </updateLog>
+  </updateHandler>
 
   <searchComponent name="spellcheck" class="solr.SpellCheckComponent">
     <str name="queryAnalyzerFieldType">textSpell</str>
