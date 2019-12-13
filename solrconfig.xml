@@ -143,12 +143,11 @@
 
   <updateHandler class="solr.DirectUpdateHandler2">
     <autoCommit>
-       <maxDocs>1000000</maxDocs>
-       <maxTime>900000</maxTime>
-       <openSearcher>false</openSearcher>
+       <maxDocs>10000</maxDocs>
+       <maxTime>9000</maxTime>
     </autoCommit>
     <autoSoftCommit>
-      <maxTime>9000000</maxTime>
+      <maxTime>1000</maxTime>
     </autoSoftCommit>
     <commitWithin>
       <softCommit>false</softCommit>
