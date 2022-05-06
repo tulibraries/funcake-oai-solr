@@ -1,0 +1,36 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" airflow-record-id="oai:funnel_cake:padig:SHI-vcs937d">
+  <oai:header>
+    <oai:identifier>oai:funnel_cake:padig:SHI-vcs937d</oai:identifier>
+    <oai:datestamp>2022-03-22T12:33:55Z</oai:datestamp>
+    <oai:setSpec>Set:dpla_test</oai:setSpec>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dpla="http://dp.la/about/map/" xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai_qdc="http://worldcat.org/xmlschemas/qdc-1.0/" xmlns:oclc="http://purl.org/oclc/terms/" xmlns:oclcdc="http://worldcat.org/xmlschemas/oclcdc-1.0/" xmlns:oclcterms="http://purl.org/oclc/terms/" xmlns:schema="http://schema.org" xmlns:padig="http://padigital.org/ns" xmlns:svcs="http://rdfs.org/sioc/services" airflow-record-id="padig:SHI-vcs937d">
+      <dcterms:title>Raphael Meldola</dcterms:title>
+      <edm:rights>http://creativecommons.org/publicdomain/mark/1.0/</edm:rights>
+      <dcterms:creator>Marchant, James, Sir, 1867-1956</dcterms:creator>
+      <dcterms:date>1916</dcterms:date>
+      <dcterms:description>Biography of Raphael Meldola (1849-1915) who was a British chemist and entomologist. Chapters include information on when he was Professor of Organic Chemistry at the University of London from 1912-15 as well a sections on his work as a chemical investigator, naturalist and astronomer. Of Spanish and Portuguese Jewish descent, Meldola was the first president of the Maccabaeans, an Anglo-Jewish friendly society established in 1894. This fraternal organization is open to persons of the Jewish faith who adhere to the Zionist Movement with intentions of resettling Jews in Palestine. The cover, frontismatter and title page have been digitized from this work.</dcterms:description>
+      <dcterms:language>English</dcterms:language>
+      <dcterms:publisher>Williams &amp; Norgate</dcterms:publisher>
+      <dcterms:subject>Meldola, Raphael, 1849-1915</dcterms:subject>
+      <dcterms:subject>Chemists--Biography</dcterms:subject>
+      <dcterms:subject>Jewish scientists</dcterms:subject>
+      <dcterms:subject>Jews</dcterms:subject>
+      <dcterms:subject>Fraternal organizations</dcterms:subject>
+      <dcterms:subject>Naturalists</dcterms:subject>
+      <dcterms:subject>Astronomers</dcterms:subject>
+      <dcterms:subject>College teachers</dcterms:subject>
+      <dcterms:subject>Chemistry teachers</dcterms:subject>
+      <dcterms:type>Image</dcterms:type>
+      <dcterms:type>Text</dcterms:type>
+      <dcterms:format>publications</dcterms:format>
+      <edm:preview>https://digital.sciencehistory.org/downloads/idsqv0l/thumb_large_2X?disposition=inline</edm:preview>
+      <dcterms:identifier>padig:SHI-vcs937d</dcterms:identifier>
+      <dcterms:isPartOf>Science History Institute Digital Collections</dcterms:isPartOf>
+      <edm:dataProvider>Science History Institute</edm:dataProvider>
+      <edm:isShownAt>https://digital.sciencehistory.org/works/vcs937d</edm:isShownAt>
+      <edm:provider>PA Digital</edm:provider>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

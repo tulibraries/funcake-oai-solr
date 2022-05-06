@@ -1,0 +1,37 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" airflow-record-id="oai:funnel_cake:padig:SHI-vctxa8g">
+  <oai:header>
+    <oai:identifier>oai:funnel_cake:padig:SHI-vctxa8g</oai:identifier>
+    <oai:datestamp>2022-03-22T12:33:55Z</oai:datestamp>
+    <oai:setSpec>Set:dpla_test</oai:setSpec>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dpla="http://dp.la/about/map/" xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai_qdc="http://worldcat.org/xmlschemas/qdc-1.0/" xmlns:oclc="http://purl.org/oclc/terms/" xmlns:oclcdc="http://worldcat.org/xmlschemas/oclcdc-1.0/" xmlns:oclcterms="http://purl.org/oclc/terms/" xmlns:schema="http://schema.org" xmlns:padig="http://padigital.org/ns" xmlns:svcs="http://rdfs.org/sioc/services" airflow-record-id="padig:SHI-vctxa8g">
+      <dcterms:title>Figure 414. Prong-horn. Figure 415. Mountain Goat</dcterms:title>
+      <edm:rights>http://creativecommons.org/publicdomain/mark/1.0/</edm:rights>
+      <dcterms:creator>Steele, Joel Dorman, 1836-1886</dcterms:creator>
+      <dcterms:creator>Jenks, J. W. P. (John Whipple Potter), 1819-1894</dcterms:creator>
+      <dcterms:date>1887</dcterms:date>
+      <dcterms:description>Figures 414 and 415 of the 1887 volume Popular Zoology. Figure 414 depicts a pronghorn. Figure 415 depicts a mountain goat. Designed to give students an understanding of the animal worlds, Popular Zoology describes and identifies the animals in two kingdoms of nature: the Invertebrates and the Vertebrates. The volume includes copious intaglio printed illustrations of the animals described, as well as a series of charts detailing the systematic arrangement of representative forms. This is one of a series of textbooks written by American educator Joel Dorman Steele (1836-1886), who often worked in collaboration with his wife Esther Baker Steele (1835-1911). Subjects addressed in a similar manner in other volumes include chemistry, human physiology, physics,and astronomy. Popular Zoology was completed posthumously by J. W. P. Jenks (1819-1894), Professor of Agricultural Zoology at Brown University, who is credited as a co-author on the volume.</dcterms:description>
+      <dcterms:language>English</dcterms:language>
+      <dcterms:publisher>Chautauqua Press</dcterms:publisher>
+      <dcterms:subject>Science--Study and teaching</dcterms:subject>
+      <dcterms:subject>Textbooks</dcterms:subject>
+      <dcterms:subject>Animals</dcterms:subject>
+      <dcterms:subject>Vertebrates</dcterms:subject>
+      <dcterms:subject>Zoology</dcterms:subject>
+      <dcterms:subject>Scientific illustration</dcterms:subject>
+      <dcterms:subject>Mammals</dcterms:subject>
+      <dcterms:subject>Pronghorn</dcterms:subject>
+      <dcterms:subject>Mountain goat</dcterms:subject>
+      <dcterms:type>Image</dcterms:type>
+      <dcterms:type>Text</dcterms:type>
+      <dcterms:format>publications</dcterms:format>
+      <edm:preview>https://digital.sciencehistory.org/downloads/9z903103q/thumb_large_2X?disposition=inline</edm:preview>
+      <dcterms:identifier>padig:SHI-vctxa8g</dcterms:identifier>
+      <dcterms:isPartOf>Science History Institute Digital Collections</dcterms:isPartOf>
+      <edm:dataProvider>Science History Institute</edm:dataProvider>
+      <edm:isShownAt>https://digital.sciencehistory.org/works/vctxa8g</edm:isShownAt>
+      <edm:provider>PA Digital</edm:provider>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

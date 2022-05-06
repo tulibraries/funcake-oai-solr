@@ -1,0 +1,32 @@
+version: "3.3"
+
+services:
+  app:
+    image: ruby:2.7.6
+    working_dir: /app
+    depends_on:
+      - solr
+    tty: true
+    volumes:
+      - .:/app
+      - $PWD/bin/load-data:/bin/load-data
+    environment:
+      FUNCAKE_OAI_SOLR_URL: "http://solr:8983/solr/oai"
+      SOLR_URL: "${FUNCAKE_OAI_SOLR_URL}"
+      SOLR_DISABLE_UPDATE_DATE_CHECK: "true"
+      DO_INGEST: "${DO_INGEST}"
+      LC_ALL: "C.UTF-8"
+      BUNDLE_PATH: /app/vendor/bundle
+
+  solr:
+    image: solr:8.3.0
+    volumes:
+      - $PWD/bin/solr-configs-reset:/opt/docker-solr/scripts/solr-configs-reset
+      - .:/opt/solr/configs/oai
+    ports:
+      - 8983:8983
+    entrypoint:
+      - bash
+      - "-c"
+      - "precreate-core oai /opt/solr/configs/oai; \
+  exec solr -f -a '-Xms256m -Xmx512m'"
