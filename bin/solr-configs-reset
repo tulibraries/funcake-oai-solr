@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-cp /opt/solr/configs/funcake-oai-solr/solrconfig.xml /var/solr/data/oai/
-cp /opt/solr/configs/funcake-oai-solr/schema.xml /var/solr/data/oai/
+cp /opt/solr/configs/oai/solrconfig.xml /var/solr/data/oai/
+cp /opt/solr/configs/oai/schema.xml /var/solr/data/oai/
 curl 'http://localhost:8983/solr/admin/cores?action=RELOAD&core=oai'
