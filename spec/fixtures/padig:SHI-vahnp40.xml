@@ -1,0 +1,30 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" airflow-record-id="oai:funnel_cake:padig:SHI-vahnp40">
+  <oai:header>
+    <oai:identifier>oai:funnel_cake:padig:SHI-vahnp40</oai:identifier>
+    <oai:datestamp>2022-03-22T12:33:55Z</oai:datestamp>
+    <oai:setSpec>Set:dpla_test</oai:setSpec>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dpla="http://dp.la/about/map/" xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai_qdc="http://worldcat.org/xmlschemas/qdc-1.0/" xmlns:oclc="http://purl.org/oclc/terms/" xmlns:oclcdc="http://worldcat.org/xmlschemas/oclcdc-1.0/" xmlns:oclcterms="http://purl.org/oclc/terms/" xmlns:schema="http://schema.org" xmlns:padig="http://padigital.org/ns" xmlns:svcs="http://rdfs.org/sioc/services" airflow-record-id="padig:SHI-vahnp40">
+      <dcterms:title>Letter from Georg Bredig addressed to Harold Willis Dodds</dcterms:title>
+      <edm:rights>http://creativecommons.org/publicdomain/mark/1.0/</edm:rights>
+      <dcterms:creator>Bredig, Georg, 1868-1944</dcterms:creator>
+      <dcterms:contributor>Dodds, Harold W. (Harold Willis), 1889-1980</dcterms:contributor>
+      <dcterms:date>1939-Dec-19</dcterms:date>
+      <dcterms:description>Letter from Georg Bredig (1868-1944) to Harold Willis Dodds (1889-1980), the president of Princeton University. Bredig thanks Dodds for the invitation to be a professor at Princeton and tells him he will be leaving as soon as possible.</dcterms:description>
+      <dcterms:language>English</dcterms:language>
+      <dcterms:subject>Bredig, Georg, 1868-1944</dcterms:subject>
+      <dcterms:subject>Dodds, Harold W. (Harold Willis), 1889-1980</dcterms:subject>
+      <dcterms:subject>Princeton University</dcterms:subject>
+      <dcterms:subject>Emigration and immigration</dcterms:subject>
+      <dcterms:type>Text</dcterms:type>
+      <dcterms:format>business correspondence</dcterms:format>
+      <edm:preview>https://digital.sciencehistory.org/downloads/qbkq7xp/thumb_large_2X?disposition=inline</edm:preview>
+      <dcterms:identifier>padig:SHI-vahnp40</dcterms:identifier>
+      <dcterms:isPartOf>Science History Institute Digital Collections</dcterms:isPartOf>
+      <edm:dataProvider>Science History Institute</edm:dataProvider>
+      <edm:isShownAt>https://digital.sciencehistory.org/works/vahnp40</edm:isShownAt>
+      <edm:provider>PA Digital</edm:provider>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

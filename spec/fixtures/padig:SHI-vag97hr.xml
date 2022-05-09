@@ -1,0 +1,28 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" airflow-record-id="oai:funnel_cake:padig:SHI-vag97hr">
+  <oai:header>
+    <oai:identifier>oai:funnel_cake:padig:SHI-vag97hr</oai:identifier>
+    <oai:datestamp>2022-03-22T12:33:55Z</oai:datestamp>
+    <oai:setSpec>Set:dpla_test</oai:setSpec>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dpla="http://dp.la/about/map/" xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai_qdc="http://worldcat.org/xmlschemas/qdc-1.0/" xmlns:oclc="http://purl.org/oclc/terms/" xmlns:oclcdc="http://worldcat.org/xmlschemas/oclcdc-1.0/" xmlns:oclcterms="http://purl.org/oclc/terms/" xmlns:schema="http://schema.org" xmlns:padig="http://padigital.org/ns" xmlns:svcs="http://rdfs.org/sioc/services" airflow-record-id="padig:SHI-vag97hr">
+      <dcterms:title>Diagram of a Linde ice machine</dcterms:title>
+      <edm:rights>http://rightsstatements.org/vocab/NoC-US/1.0/</edm:rights>
+      <dcterms:contributor>Bredig, Georg, 1868-1944</dcterms:contributor>
+      <dcterms:date>Circa 1924</dcterms:date>
+      <dcterms:language>German</dcterms:language>
+      <dcterms:subject>Linde, Carl, 1842-1934</dcterms:subject>
+      <dcterms:subject>Bredig, Georg, 1868-1944</dcterms:subject>
+      <dcterms:subject>Refrigeration and refrigerating machinery</dcterms:subject>
+      <dcterms:subject>Linde Aktiengesellschaft</dcterms:subject>
+      <dcterms:type>Text</dcterms:type>
+      <dcterms:format>charts, diagrams, etc</dcterms:format>
+      <edm:preview>https://digital.sciencehistory.org/downloads/jdxut0s/thumb_large_2X?disposition=inline</edm:preview>
+      <dcterms:identifier>padig:SHI-vag97hr</dcterms:identifier>
+      <dcterms:isPartOf>Science History Institute Digital Collections</dcterms:isPartOf>
+      <edm:dataProvider>Science History Institute</edm:dataProvider>
+      <edm:isShownAt>https://digital.sciencehistory.org/works/vag97hr</edm:isShownAt>
+      <edm:provider>PA Digital</edm:provider>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>
