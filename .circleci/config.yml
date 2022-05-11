@@ -23,20 +23,35 @@ workflows:
               only: /.*/
 jobs:
   run_tests:
-    docker:
-      - image: cimg/python:3.7.11
+    machine:
+      image: ubuntu-2004:current
+  
     steps:
       - checkout
-      - setup_remote_docker
-      - add_ssh_keys:
-          fingerprints:
-            - "17:e6:22:64:80:ff:b5:27:08:53:b2:c9:84:f7:b2:10"
+      - restore_cache:
+          keys:
+            - gem-cache-v1-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+            - gem-cache-v1-{{ arch }}-{{ .Branch }}
+            - gem-cache-v1
       - run:
-          name: Set up a local Solr with build's solr config.
-          command: bash .circleci/setup_solr.sh
+          name: Install Docker Compose
+          command: |
+            curl -L https://github.com/docker/compose/releases/download/1.24.1/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
+            chmod +x ~/docker-compose
+            sudo mv ~/docker-compose /usr/local/bin/docker-compose
       - run:
-          name: Test that we can get to the solr collection successfully.
-          command: bash .circleci/test.sh
+          name: Build the app
+          command: make up
+      - save_cache:
+          key: gem-cache-v1-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+              - vendor/bundle
+      - run:
+          name: Install Solr Documents
+          command: make load-data
+      - run:
+          name: Run relevancy Tests
+          command: make test
   run_deploy:
     docker:
       - image: cimg/python:3.7.11
