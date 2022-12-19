@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: d9e5e976c36c5eab036927f3b6c8c0ffbc8ba8b8
+  revision: c07c09419276e9cbde6eb9ddb1e7ccafb6457641
   specs:
     oai_index (0.1.0)
       gli (~> 2.18)
@@ -30,7 +30,7 @@ GEM
       rake
     gli (2.21.0)
     hashie (5.0.0)
-    http (5.1.0)
+    http (5.1.1)
       addressable (~> 2.8)
       http-cookie (~> 1.0)
       http-form_data (~> 2.2)
@@ -51,14 +51,14 @@ GEM
       marc (~> 1.0)
     method_source (1.0.0)
     mini_portile2 (2.8.0)
-    nokogiri (1.13.9)
+    nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    public_suffix (5.0.0)
-    racc (1.6.0)
+    public_suffix (5.0.1)
+    racc (1.6.1)
     rake (13.0.6)
     rexml (3.2.5)
     rsolr (2.5.0)
@@ -80,7 +80,7 @@ GEM
     ruby2_keywords (0.0.5)
     scrub_rb (1.0.1)
     slop (4.9.3)
-    traject (3.7.0)
+    traject (3.8.1)
       concurrent-ruby (>= 0.8.0)
       dot-properties (>= 0.1.1)
       hashie (>= 3.1, < 6)
