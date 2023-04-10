@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: 388f31e5974c66662ba104e34cfa2e13fcbf9518
+  revision: 8761acc329436b26be6dfc9725160c20f4020db4
   specs:
     oai_index (0.1.0)
       gli (~> 2.18)
@@ -10,7 +10,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.1)
+    addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     builder (3.2.4)
     coderay (1.1.3)
