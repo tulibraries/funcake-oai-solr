@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: 6b8135d3c8372c459bb094bc5f8462ee40ce344b
+  revision: c4317ac63615e712c6b1d5a7211a2ec3e280a31b
   specs:
     oai_index (0.1.0)
       gli (~> 2.18)
@@ -50,9 +50,9 @@ GEM
     marc-fastxmlwriter (1.1.0)
       marc (~> 1.0)
     method_source (1.0.0)
-    mini_portile2 (2.8.1)
-    nokogiri (1.14.3)
-      mini_portile2 (~> 2.8.0)
+    mini_portile2 (2.8.2)
+    nokogiri (1.15.1)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     pry (0.14.2)
       coderay (~> 1.1)
