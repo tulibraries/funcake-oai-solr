@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: 93f86a2e54db6d3ee99bfc6aabc749f498067bfe
+  revision: eaeb39bab7086193518cea72c5b425efd1db0759
   specs:
     oai_index (0.1.0)
       gli (~> 2.18)
@@ -24,7 +24,7 @@ GEM
       faraday-net_http (~> 2.0)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (2.0.2)
-    ffi (1.15.5)
+    ffi (1.16.1)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
