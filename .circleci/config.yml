@@ -30,9 +30,9 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - gem-cache-v5-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-            - gem-cache-v5-{{ arch }}-{{ .Branch }}
-            - gem-cache-v5
+            - gem-cache-v6-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+            - gem-cache-v6-{{ arch }}-{{ .Branch }}
+            - gem-cache-v6
       - run:
           name: Install Docker Compose
           command: |
@@ -43,7 +43,7 @@ jobs:
           name: Build the app
           command: make up
       - save_cache:
-          key: gem-cache-v5-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          key: gem-cache-v6-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
           paths:
               - vendor/bundle
       - run:
