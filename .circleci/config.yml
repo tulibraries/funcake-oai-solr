@@ -20,7 +20,7 @@ workflows:
             branches:
               ignore: /.*/
             tags:
-              # only: /.*/
+               only: /.*/
 jobs:
   run_tests:
     machine:
