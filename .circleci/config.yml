@@ -54,7 +54,7 @@ jobs:
           command: make test
   run_deploy:
     docker:
-      - image: cimg/python:3.10.13
+      - image: cimg/python:3.12.3
         environment:
           PIPENV_VENV_IN_PROJECT: true
     steps:

@@ -20,26 +20,26 @@ validate_create() {
 }
 echo
 echo "***"
-echo "* Sending funcake-oai-$CIRCLE_TAG configs to SolrCloud."
+echo "* Sending funcake-oai-$CIRCLE_TAG configs to solrcloud-rocky8."
 echo "***"
-RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" --data-binary @/home/circleci/solrconfig.zip "https://solrcloud.tul-infra.page/solr/admin/configs?action=UPLOAD&name=funcake-oai-$CIRCLE_TAG")
+RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" --data-binary @/home/circleci/solrconfig.zip "https://solrcloud-rocky8.tul-infra.page/solr/admin/configs?action=UPLOAD&name=funcake-oai-$CIRCLE_TAG")
 validate_status
 echo
 echo "***"
 echo "* Creating new funcake-oai-$CIRCLE_TAG collection"
 echo "***"
-RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X GET --header 'Accept: application/json' "https://solrcloud.tul-infra.page/solr/admin/collections?action=CREATE&name=funcake-oai-$CIRCLE_TAG-init&numShards=1&replicationFactor=2&maxShardsPerNode=1&collection.configName=funcake-oai-$CIRCLE_TAG")
+RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X GET --header 'Accept: application/json' "https://solrcloud-rocky8.tul-infra.page/solr/admin/collections?action=CREATE&name=funcake-oai-$CIRCLE_TAG-init&numShards=1&replicationFactor=2&maxShardsPerNode=1&collection.configName=funcake-oai-$CIRCLE_TAG")
 validate_status
 echo
 echo "***"
 echo "* Creating dev alias based on configset name."
 echo "***"
-RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" "https://solrcloud.tul-infra.page/solr/admin/collections?action=CREATEALIAS&name=funcake-oai-$CIRCLE_TAG-dev&collections=funcake-oai-$CIRCLE_TAG-init")
+RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" "https://solrcloud-rocky8.tul-infra.page/solr/admin/collections?action=CREATEALIAS&name=funcake-oai-$CIRCLE_TAG-dev&collections=funcake-oai-$CIRCLE_TAG-init")
 validate_status
 echo "***"
 echo "* Creating prod alias based on configset name."
 echo "***"
-RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" "https://solrcloud.tul-infra.page/solr/admin/collections?action=CREATEALIAS&name=funcake-oai-$CIRCLE_TAG-prod&collections=funcake-oai-$CIRCLE_TAG-init")
+RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" "https://solrcloud-rocky8.tul-infra.page/solr/admin/collections?action=CREATEALIAS&name=funcake-oai-$CIRCLE_TAG-prod&collections=funcake-oai-$CIRCLE_TAG-init")
 validate_status
 echo "***"
 echo "* Pushing zip file asset to GitHub release."
