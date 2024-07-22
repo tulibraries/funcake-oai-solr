@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: 533ede072f24f50f50d7404d466a5c6783637b3d
+  revision: fab7f44c4ba9d35e02223a199b4424f311a3d541
   specs:
     oai_index (0.1.0)
       gli
@@ -10,8 +10,8 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.6)
-      public_suffix (>= 2.0.2, < 6.0)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
     base64 (0.2.0)
     builder (3.2.4)
     coderay (1.1.3)
@@ -30,7 +30,7 @@ GEM
     ffi-compiler (1.3.2)
       ffi (>= 1.15.5)
       rake
-    gli (2.21.1)
+    gli (2.21.5)
     hashie (5.0.0)
     http (5.2.0)
       addressable (~> 2.8)
@@ -56,20 +56,20 @@ GEM
     mini_portile2 (2.8.7)
     net-http (0.4.1)
       uri
-    nokogiri (1.16.5)
+    nokogiri (1.16.6)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.16.5-x86_64-darwin)
+    nokogiri (1.16.6-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.5-x86_64-linux)
+    nokogiri (1.16.6-x86_64-linux)
       racc (~> 1.4)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    public_suffix (5.0.5)
+    public_suffix (6.0.0)
     racc (1.8.0)
     rake (13.2.1)
-    rexml (3.2.9)
+    rexml (3.3.2)
       strscan
     rsolr (2.6.0)
       builder (>= 2.1.2)
