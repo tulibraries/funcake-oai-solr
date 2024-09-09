@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: c66ac304bc8e1d03512fb99a0ea2ed2eb3db3271
+  revision: 0b7f3adb44b31806b306d4aaf87c0b7df28dcbac
   specs:
     oai_index (0.1.0)
       gli
@@ -38,7 +38,7 @@ GEM
       http-cookie (~> 1.0)
       http-form_data (~> 2.2)
       llhttp-ffi (~> 0.5.0)
-    http-cookie (1.0.6)
+    http-cookie (1.0.7)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
     httpclient (2.8.3)
@@ -69,8 +69,7 @@ GEM
     public_suffix (6.0.1)
     racc (1.8.1)
     rake (13.2.1)
-    rexml (3.3.5)
-      strscan
+    rexml (3.3.7)
     rsolr (2.6.0)
       builder (>= 2.1.2)
       faraday (>= 0.9, < 3, != 2.0.0)
@@ -89,7 +88,6 @@ GEM
     rspec-support (3.13.0)
     scrub_rb (1.0.1)
     slop (4.10.1)
-    strscan (3.1.0)
     traject (3.8.2)
       concurrent-ruby (>= 0.8.0)
       dot-properties (>= 0.1.1)
@@ -101,9 +99,7 @@ GEM
       nokogiri (~> 1.9)
       slop (~> 4.0)
       yell
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.9.1)
+    unf (0.2.0)
     uri (0.13.0)
     yell (2.2.2)
 
