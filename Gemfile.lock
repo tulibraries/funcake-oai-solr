@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: 46bb563d56ae0a05b8c03c0ca503aedaba95b1cf
+  revision: 455fece036671dbdefd2116c5c85b827e7b1212f
   specs:
     oai_index (0.1.0)
       gli
@@ -30,7 +30,7 @@ GEM
     ffi-compiler (1.3.2)
       ffi (>= 1.15.5)
       rake
-    gli (2.21.5)
+    gli (2.22.0)
     hashie (5.0.0)
     http (5.2.0)
       addressable (~> 2.8)
@@ -69,7 +69,7 @@ GEM
     public_suffix (6.0.1)
     racc (1.8.1)
     rake (13.2.1)
-    rexml (3.3.7)
+    rexml (3.3.9)
     rsolr (2.6.0)
       builder (>= 2.1.2)
       faraday (>= 0.9, < 3, != 2.0.0)
