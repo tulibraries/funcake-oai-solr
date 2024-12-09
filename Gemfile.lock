@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: b1b5e2c1e8c785eac8205a115abd3a2bf98bdf23
+  revision: ecd57d6db8f72696a57186b0fde688c51c49481e
   specs:
     oai_index (0.1.0)
       gli
@@ -38,7 +38,7 @@ GEM
       http-cookie (~> 1.0)
       http-form_data (~> 2.2)
       llhttp-ffi (~> 0.5.0)
-    http-cookie (1.0.7)
+    http-cookie (1.0.8)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
     httpclient (2.8.3)
@@ -56,12 +56,12 @@ GEM
     mini_portile2 (2.8.8)
     net-http (0.4.1)
       uri
-    nokogiri (1.16.7)
+    nokogiri (1.17.0)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.16.7-x86_64-darwin)
+    nokogiri (1.17.0-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.7-x86_64-linux)
+    nokogiri (1.17.0-x86_64-linux)
       racc (~> 1.4)
     pry (0.15.0)
       coderay (~> 1.1)
