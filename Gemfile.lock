@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: aec3071b464be8ec0621f9d1cdb1f67bd8c30e8e
+  revision: 5d2f05d51a29616ce02838b80169616095076791
   specs:
     oai_index (0.1.0)
       gli
@@ -16,7 +16,7 @@ GEM
     builder (3.2.4)
     coderay (1.1.3)
     concurrent-ruby (1.3.5)
-    csv (3.3.2)
+    csv (3.3.3)
     diff-lcs (1.5.1)
     domain_name (0.6.20240107)
     dot-properties (0.1.4)
@@ -59,12 +59,12 @@ GEM
     mutex_m (0.3.0)
     net-http (0.4.1)
       uri
-    nokogiri (1.18.4)
+    nokogiri (1.18.6)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.18.4-x86_64-darwin)
+    nokogiri (1.18.6-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.4-x86_64-linux-gnu)
+    nokogiri (1.18.6-x86_64-linux-gnu)
       racc (~> 1.4)
     ostruct (0.6.1)
     pry (0.15.2)
