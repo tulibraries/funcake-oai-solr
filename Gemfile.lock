@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: aa4241dd8b9be49d5b83082b1e1cf42534a7162b
+  revision: cbacfecf77730b3265036b93a74e23ddc0eff64c
   specs:
     oai_index (0.1.0)
       gli
