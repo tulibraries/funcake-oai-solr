@@ -1,0 +1,36 @@
+name: Test
+
+on:
+  push:
+    branches-ignore:
+      - main
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ["3.3"]
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+            
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        
+      - name: Build and start services
+        run: docker compose up -d
+        
+      - name: Install Solr documents
+        run: docker compose exec app load-data
+        
+      - name: Run relevancy tests
+        run: docker compose exec app bundle exec rspec
