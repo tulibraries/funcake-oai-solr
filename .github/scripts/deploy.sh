@@ -19,35 +19,35 @@ validate_create() {
   fi
 }
 
-# Extract tag from GitHub ref
-TAG=${GITHUB_REF#refs/tags/}
+# Extract release tag from GitHub ref
+RELEASE_TAG=${GITHUB_REF#refs/tags/}
 
 echo
 echo "***"
-echo "* Sending funcake-oai-$TAG configs to solrcloud-rocky9."
+echo "* Sending funcake-oai-$RELEASE_TAG configs to solrcloud-rocky9."
 echo "***"
-RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" --data-binary @$HOME/solrconfig.zip "https://solrcloud-rocky9.tul-infra.page/solr/admin/configs?action=UPLOAD&name=funcake-oai-$TAG")
+RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" --data-binary @$HOME/solrconfig.zip "https://solrcloud-rocky9.tul-infra.page/solr/admin/configs?action=UPLOAD&name=funcake-oai-$RELEASE_TAG")
 validate_status
 echo
 echo "***"
-echo "* Creating new funcake-oai-$TAG collection"
+echo "* Creating new funcake-oai-$RELEASE_TAG collection"
 echo "***"
-RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X GET --header 'Accept: application/json' "https://solrcloud-rocky9.tul-infra.page/solr/admin/collections?action=CREATE&name=funcake-oai-$TAG-init&numShards=1&replicationFactor=2&maxShardsPerNode=1&collection.configName=funcake-oai-$TAG")
+RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X GET --header 'Accept: application/json' "https://solrcloud-rocky9.tul-infra.page/solr/admin/collections?action=CREATE&name=funcake-oai-$RELEASE_TAG-init&numShards=1&replicationFactor=2&maxShardsPerNode=1&collection.configName=funcake-oai-$RELEASE_TAG")
 validate_status
 echo
 echo "***"
 echo "* Creating dev alias based on configset name."
 echo "***"
-RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" "https://solrcloud-rocky9.tul-infra.page/solr/admin/collections?action=CREATEALIAS&name=funcake-oai-$TAG-dev&collections=funcake-oai-$TAG-init")
+RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" "https://solrcloud-rocky9.tul-infra.page/solr/admin/collections?action=CREATEALIAS&name=funcake-oai-$RELEASE_TAG-dev&collections=funcake-oai-$RELEASE_TAG-init")
 validate_status
 echo "***"
 echo "* Creating prod alias based on configset name."
 echo "***"
-RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" "https://solrcloud-rocky9.tul-infra.page/solr/admin/collections?action=CREATEALIAS&name=funcake-oai-$TAG-prod&collections=funcake-oai-$TAG-init")
+RESP=$(curl -u $SOLR_USER:$SOLR_PASSWORD -i -o - --silent -X POST --header "Content-Type:application/octet-stream" "https://solrcloud-rocky9.tul-infra.page/solr/admin/collections?action=CREATEALIAS&name=funcake-oai-$RELEASE_TAG-prod&collections=funcake-oai-$RELEASE_TAG-init")
 validate_status
 echo "***"
 echo "* Pushing zip file asset to GitHub release."
 echo "***"
 RELEASE_ID=$(curl "https://api.github.com/repos/tulibraries/funcake-oai-solr/releases/latest" | jq .id)
-RESP=$(curl -s -o /dev/null -w "%{http_code}" -X POST -H "Authorization: token $GITHUB_TOKEN" --data-binary @$HOME/solrconfig.zip -H "Content-Type: application/octet-stream" "https://uploads.github.com/repos/tulibraries/funcake-oai-solr/releases/$RELEASE_ID/assets?name=funcake-oai-$TAG.zip")
+RESP=$(curl -s -o /dev/null -w "%{http_code}" -X POST -H "Authorization: token $GITHUB_TOKEN" --data-binary @$HOME/solrconfig.zip -H "Content-Type: application/octet-stream" "https://uploads.github.com/repos/tulibraries/funcake-oai-solr/releases/$RELEASE_ID/assets?name=funcake-oai-$RELEASE_TAG.zip")
 validate_create
