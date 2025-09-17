@@ -52,7 +52,7 @@ All PRs merged into the `main` branch are _not_ deployed anywhere. Only releases
 
 ### Production
 
-Once the main branch has been adequately tested and reviewed, a release is cut. Upon creating the release tag (using semantic versioning like `v1.0.0`), the GitHub Actions deploy workflow automatically:
+Once the main branch has been adequately tested and reviewed, a release is cut. Upon creating the release tag (using integer tags like `1`, `2`, `3`), the GitHub Actions deploy workflow automatically:
 1. new ConfigSet of `funcake-oai-{release-tag}` is created in [Production SolrCloud](https://solrcloud-rocky9.tul-infra.page);
 2. new Collection of `funcake-oai-{release-tag}-init` is created in [Production SolrCloud](https://solrcloud-rocky9.tul-infra.page) w/the requisite ConfigSet (this Collection is largely ignored);
 3. a new Dev alias of `funcake-oai-{release-tag}-dev` is created in [Production SolrCloud](https://solrcloud-rocky9.tul-infra.page), pointing to the init Collection;
