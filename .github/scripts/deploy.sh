@@ -19,9 +19,6 @@ validate_create() {
   fi
 }
 
-# Extract release tag from GitHub ref
-RELEASE_TAG=${GITHUB_REF#refs/tags/}
-
 echo
 echo "***"
 echo "* Sending funcake-oai-$RELEASE_TAG configs to solrcloud-rocky9."
