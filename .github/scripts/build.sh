@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
-cd ~/project
+cd $GITHUB_WORKSPACE
 zip -r ~/solrconfig.zip . -x ".git*" \
   Gemfile Gemfile.lock "spec/*" "vendor/*" \
-  Makefile ".circle*" "bin/*" LICENSE "README*" \
+  Makefile ".github/*" "bin/*" LICENSE "README*" \
   docker-compose.yml

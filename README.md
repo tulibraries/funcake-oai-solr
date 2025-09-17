@@ -1,11 +1,12 @@
 # Funnel Cake OAI (funcake-oai) Solr Configurations
-[![CircleCI](https://circleci.com/gh/tulibraries/funcake-oai-solr.svg?style=svg)](https://circleci.com/gh/tulibraries/funcake-oai-solr)
+[![Test](https://github.com/tulibraries/funcake-oai-solr/actions/workflows/test.yml/badge.svg)](https://github.com/tulibraries/funcake-oai-solr/actions/workflows/test.yml)
+[![Deploy](https://github.com/tulibraries/funcake-oai-solr/actions/workflows/deploy.yml/badge.svg)](https://github.com/tulibraries/funcake-oai-solr/actions/workflows/deploy.yml)
 
 These are the Solr configuration files for the Funnel Cake (PA Digital) OAI endpoint.
 
 ## Prerequisites
 
-- These configurations are built for Solr 8.1
+- These configurations are built for Solr 9.6
 - The instructions below presume a SolrCloud multi-node setup (using an external Zookeeper)
 
 ## Local Testing / Development
@@ -51,12 +52,12 @@ All PRs merged into the `main` branch are _not_ deployed anywhere. Only releases
 
 ### Production
 
-Once the main branch has been adequately tested and reviewed, a release is cut. Upon creating the release tag (generally just an integer), the following occurs:
-1. new ConfigSet of `funcake-oai-{release-tag}` is created in [Production SolrCloud](https://solrcloud.tul-infra.page);
-2. new Collection of `funcake-oai-{release-tag}-init` is created in [Production SolrCloud](https://solrcloud.tul-infra.page) w/the requisite ConfigSet (this Collection is largely ignored);
-3. a new Dev alias of `funcake-oai-{release-tag}-dev` is created in [Production SolrCloud](https://solrcloud.tul-infra.page), pointing to the init Collection;
-3. a new Prod alias of `funcake-oai-{release-tag}-prod` is created in [Production SolrCloud](https://solrcloud.tul-infra.page), pointing to the init Collection;
-4. and, manually, a full reindex DAG is kicked off from Airflow Production to this new funcake-oai alias. Upon completion of the reindex, relevant clients are redeployed pointing at their new alias, and *then QA & UAT review occur*.
+Once the main branch has been adequately tested and reviewed, a release is cut. Upon creating the release tag (using integer tags like `1`, `2`, `3`), the GitHub Actions deploy workflow automatically:
+1. new ConfigSet of `funcake-oai-{release-tag}` is created in [Production SolrCloud](https://solrcloud-rocky9.tul-infra.page);
+2. new Collection of `funcake-oai-{release-tag}-init` is created in [Production SolrCloud](https://solrcloud-rocky9.tul-infra.page) w/the requisite ConfigSet (this Collection is largely ignored);
+3. a new Dev alias of `funcake-oai-{release-tag}-dev` is created in [Production SolrCloud](https://solrcloud-rocky9.tul-infra.page), pointing to the init Collection;
+4. a new Prod alias of `funcake-oai-{release-tag}-prod` is created in [Production SolrCloud](https://solrcloud-rocky9.tul-infra.page), pointing to the init Collection;
+5. and, manually, a full reindex DAG is kicked off from Airflow Production to this new funcake-oai alias. Upon completion of the reindex, relevant clients are redeployed pointing at their new alias, and *then QA & UAT review occur*.
 
 See the process outlined here: https://github.com/tulibraries/docs/blob/main/services/solrcloud.md
 
