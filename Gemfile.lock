@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: c89a3d52e83531045bdac1809fd180f92174c526
+  revision: 8d32a30dbb34d3cd0dceb27ee366f0cab97918b8
   specs:
     oai_index (0.1.0)
       gli
@@ -38,7 +38,7 @@ GEM
       http-cookie (~> 1.0)
       http-form_data (~> 2.2)
       llhttp-ffi (~> 0.5.0)
-    http-cookie (1.0.8)
+    http-cookie (1.1.0)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
     httpclient (2.9.0)
