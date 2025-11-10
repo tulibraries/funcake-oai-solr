@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: 8d32a30dbb34d3cd0dceb27ee366f0cab97918b8
+  revision: dd93ba64d66a01a4af8b8dc176ad57a86fb62301
   specs:
     oai_index (0.1.0)
       gli
@@ -70,7 +70,7 @@ GEM
       method_source (~> 1.0)
     public_suffix (6.0.2)
     racc (1.8.1)
-    rake (13.3.0)
+    rake (13.3.1)
     rexml (3.4.4)
     rsolr (2.6.0)
       builder (>= 2.1.2)
