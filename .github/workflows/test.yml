@@ -25,3 +25,6 @@ jobs:
         
       - name: Run relevancy tests
         run: make test
+
+      - name: Force failure (temp)
+        run: exit 1
