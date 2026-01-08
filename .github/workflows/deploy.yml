@@ -35,13 +35,3 @@ jobs:
         
       - name: Deploy configuration asset to SolrCloud
         run: bash .github/scripts/deploy.sh
-
-  notify_on_failure:
-    if: failure()
-    needs: [deploy]
-    uses: tulibraries/.github/.github/workflows/slack-notify.yml@main
-    with:
-      repo: ${{ github.repository }}
-      run_id: ${{ github.run_id }}
-      workflow: ${{ github.workflow }}
-    secrets: inherit
