@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: dd93ba64d66a01a4af8b8dc176ad57a86fb62301
+  revision: 6fdf9a4ad247ff5056d064ca675855a02fef01ad
   specs:
     oai_index (0.1.0)
       gli
@@ -10,11 +10,11 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.7)
-      public_suffix (>= 2.0.2, < 7.0)
+    addressable (2.8.8)
+      public_suffix (>= 2.0.2, < 8.0)
     builder (3.2.4)
     coderay (1.1.3)
-    concurrent-ruby (1.3.5)
+    concurrent-ruby (1.3.6)
     csv (3.3.5)
     diff-lcs (1.6.2)
     domain_name (0.6.20240107)
@@ -24,15 +24,16 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
-    ffi (1.17.2)
-    ffi (1.17.2-x86_64-darwin)
-    ffi (1.17.2-x86_64-linux-gnu)
+    ffi (1.17.3)
+    ffi (1.17.3-x86_64-darwin)
+    ffi (1.17.3-x86_64-linux-gnu)
     ffi-compiler (1.3.2)
       ffi (>= 1.15.5)
       rake
     gli (2.22.2)
       ostruct
-    hashie (5.0.0)
+    hashie (5.1.0)
+      logger
     http (5.3.1)
       addressable (~> 2.8)
       http-cookie (~> 1.0)
@@ -47,7 +48,8 @@ GEM
     llhttp-ffi (0.5.1)
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
-    marc (1.3.0)
+    logger (1.7.0)
+    marc (1.4.0)
       nokogiri (~> 1.0)
       rexml
     marc-fastxmlwriter (1.1.0)
@@ -57,18 +59,18 @@ GEM
     mutex_m (0.3.0)
     net-http (0.4.1)
       uri
-    nokogiri (1.18.10)
+    nokogiri (1.19.0)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.18.10-x86_64-darwin)
+    nokogiri (1.19.0-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.10-x86_64-linux-gnu)
+    nokogiri (1.19.0-x86_64-linux-gnu)
       racc (~> 1.4)
     ostruct (0.6.3)
     pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    public_suffix (6.0.2)
+    public_suffix (7.0.2)
     racc (1.8.1)
     rake (13.3.1)
     rexml (3.4.4)
