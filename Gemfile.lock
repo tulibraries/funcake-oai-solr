@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: fdf14f9b79cbfe2062d7b3f8b49c789bda7eb10a
+  revision: a6de4d857ab7a556034e5225305b1be0d0bf83dd
   specs:
     oai_index (0.1.0)
       gli
@@ -60,12 +60,12 @@ GEM
     mutex_m (0.3.0)
     net-http (0.4.1)
       uri
-    nokogiri (1.19.1)
+    nokogiri (1.19.2)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.19.1-x86_64-darwin)
+    nokogiri (1.19.2-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.1-x86_64-linux-gnu)
+    nokogiri (1.19.2-x86_64-linux-gnu)
       racc (~> 1.4)
     ostruct (0.6.3)
     pry (0.16.0)
