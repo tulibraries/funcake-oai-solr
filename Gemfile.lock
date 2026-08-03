@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: 38e4aef9449c5f7663d627bc4070738db4588ba1
+  revision: b3733b6555a298f005f54eb37fa975252d66766e
   specs:
     oai_index (0.1.0)
       gli
@@ -10,12 +10,11 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.9.0)
-      public_suffix (>= 2.0.2, < 8.0)
+    base64 (0.3.0)
     builder (3.2.4)
     coderay (1.1.3)
-    concurrent-ruby (1.3.7)
-    csv (3.3.5)
+    concurrent-ruby (1.3.8)
+    csv (3.3.6)
     diff-lcs (1.6.2)
     domain_name (0.6.20240107)
     dot-properties (0.1.4)
@@ -24,31 +23,23 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
-    ffi (1.17.4)
-    ffi (1.17.4-x86_64-darwin)
-    ffi (1.17.4-x86_64-linux-gnu)
-    ffi-compiler (1.4.2)
-      ffi (>= 1.15.5)
-      rake
     gli (2.22.2)
       ostruct
     hashie (5.1.0)
       logger
-    http (5.3.1)
-      addressable (~> 2.8)
+    http-2 (1.2.1)
+    http (6.0.4)
       http-cookie (~> 1.0)
-      http-form_data (~> 2.2)
-      llhttp-ffi (~> 0.5.0)
+      llhttp (~> 0.6.1)
     http-cookie (1.1.6)
       domain_name (~> 0.5)
-    http-form_data (2.3.0)
     httpclient (2.9.0)
       mutex_m
+    httpx (1.8.1)
+      http-2 (>= 1.2.0)
     io-console (0.8.2)
     library_stdnums (1.6.0)
-    llhttp-ffi (0.5.1)
-      ffi-compiler (~> 1.0)
-      rake (~> 13.0)
+    llhttp (0.6.2)
     logger (1.7.0)
     marc (1.4.0)
       nokogiri (~> 1.0)
@@ -72,9 +63,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
       reline (>= 0.6.0)
-    public_suffix (7.0.5)
     racc (1.8.1)
-    rake (13.4.2)
     reline (0.6.3)
       io-console (~> 0.5)
     rexml (3.4.4)
@@ -95,13 +84,15 @@ GEM
       rspec-support (~> 3.13.0)
     rspec-support (3.13.6)
     slop (4.10.1)
-    traject (3.8.3)
+    traject (3.9.1)
+      base64
       concurrent-ruby (>= 0.8.0)
       csv
       dot-properties (>= 0.1.1)
       hashie (>= 3.1, < 6)
-      http (>= 3.0, < 6)
+      http (>= 3.0, < 7)
       httpclient (~> 2.5)
+      httpx (~> 1.4)
       marc (~> 1.0)
       marc-fastxmlwriter (~> 1.0)
       mutex_m
