@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: d7bb4ae313a0863b649ae256554f5f6bef3aefe7
+  revision: 9c85563f26f8690e3d7291107d5029e328e48bcb
   specs:
     oai_index (0.1.0)
       gli
@@ -16,7 +16,7 @@ GEM
     concurrent-ruby (1.3.8)
     csv (3.3.6)
     diff-lcs (1.6.2)
-    domain_name (0.6.20240107)
+    domain_name (0.6.20260907)
     dot-properties (0.1.4)
       bundler (>= 2.2.33)
     faraday (2.9.0)
@@ -27,7 +27,7 @@ GEM
       ostruct
     hashie (5.1.0)
       logger
-    http-2 (1.2.1)
+    http-2 (1.2.3)
     http (6.0.4)
       http-cookie (~> 1.0)
       llhttp (~> 0.6.1)
@@ -35,7 +35,7 @@ GEM
       domain_name (~> 0.5)
     httpclient (2.9.0)
       mutex_m
-    httpx (1.8.1)
+    httpx (1.8.4)
       http-2 (>= 1.2.0)
     io-console (0.8.2)
     library_stdnums (1.6.0)
