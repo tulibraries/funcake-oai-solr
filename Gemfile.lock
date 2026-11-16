@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tulibraries/oai_index.git
-  revision: bdb1d49a39bf907ee2b0e7378132a4c116fe791c
+  revision: 2452ae9fec4f97de5e487cf68c71d2f32975bb8c
   specs:
     oai_index (0.1.0)
       gli
@@ -35,7 +35,7 @@ GEM
       domain_name (~> 0.5)
     httpclient (2.10.0)
       mutex_m
-    httpx (1.9.0)
+    httpx (1.9.1)
       http-2 (>= 1.2.0)
     io-console (0.9.5)
     library_stdnums (1.6.0)
